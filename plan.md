@@ -16,11 +16,11 @@ Turn the current product concept and responsive prototypes into a clear, credibl
 
 ### 0. Make the portfolio baseline clear
 
-- Use the PRD, `context.md`, and this plan as the product source of truth.
-- Add a README that explains the problem, priorities, prototype links, project status, and how to preview the screens.
-- Label screenshots and prototype data as illustrative; avoid presenting mock research or scores as real results.
-- Review image and logo usage rights and add any required attribution.
-- Decide whether to restore Git metadata, connect the intended GitHub remote, and publish the portfolio materials.
+- Keep the PRD, `context.md`, and this plan aligned as the product source of truth.
+- Use the README as the portfolio case-study landing page, with the full prototype index and screenshot gallery.
+- Label screenshots and prototype data as illustrative; do not present mock research or scores as real results.
+- Review image and logo usage rights and add any required attribution before wider publication.
+- Keep the repository connected to the intended GitHub remote and publish the reviewed portfolio materials.
 
 **Complete when:** A reviewer can understand the problem, see the key screens, and distinguish the concept from a live product.
 
@@ -72,11 +72,11 @@ Turn the current product concept and responsive prototypes into a clear, credibl
 
 ## Portfolio readiness checklist
 
-- [ ] README links to the PRD, screenshots, design notes, and representative desktop/mobile prototypes.
-- [ ] The README states that prototypes use illustrative content and are not connected to live research services.
+- [x] README links to the PRD, screenshots, design notes, and all desktop/mobile prototypes.
+- [x] The README states that prototypes use illustrative content and are not connected to live research services.
 - [ ] Screenshot and logo licensing/attribution have been checked.
-- [ ] Git metadata and the intended GitHub remote are set up before the next commit/push.
-- [ ] Any published claims distinguish product intent, prototype behavior, and validated outcomes.
+- [x] Git metadata and the intended GitHub remote are set up for the portfolio repository.
+- [x] Published claims distinguish product intent, prototype behavior, and validated outcomes.
 
 ## Dependencies and risks
 
