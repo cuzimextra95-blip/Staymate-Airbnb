@@ -10,104 +10,42 @@ AiroRight is a workflow-driven platform designed to manage airline passenger cla
 Airlines and service providers often receive large volumes of passenger claims involving delays, cancellations, baggage issues, and compensation requests. These cases are difficult to process manually because they require:
 
 - consistent claim intake,
-- eligibility review,
-- duplication checks,
-- document verification,
-- multi-step communications,
-- airline submission tracking, and
-- milestone-based follow-up.
+# Project Context
 
-Without a structured system, teams risk delays, duplicate claims, inconsistent decisions, and poor communication with passengers.
+## Project
 
-## Goal of the Product
-The platform’s core goal is to streamline claim handling so that:
+**StayMate** is a portfolio concept for an AI decision companion within the Airbnb stay-discovery journey. It helps guests understand reviews, compare candidate stays, and evaluate relevant information against their own priorities.
 
-- claims are assigned efficiently,
-- duplicate cases are identified early,
-- reviews are standardized,
-- required documents are requested in a timely way,
-- airline submissions happen within the required SLA,
-- case outcomes are tracked clearly, and
-- passengers remain informed at key milestones.
+## Problem
 
-## Target Users
-### 1. Customer Service Executive
-Responsible for reviewing incoming claims, verifying passenger information, confirming eligibility, requesting documents, assigning actions, and submitting claims to airlines.
+Guests often move between Airbnb, search engines, travel sites, and social media to compare reviews, amenities, prices, locations, and photos. That fragmented research makes stay decisions slower and less certain.
 
-### 2. Operations / Case Team Lead
-Monitors workload distribution, review progress, duplicate cases, escalations, and SLA tracking.
+## Product goal
 
-### 3. Passenger / Claimant
-Submits claim details, provides supporting evidence, receives updates, and responds to requests for missing information.
+Keep useful decision support close to the stay by giving guests personalized summaries, transparent comparisons, and source-aware research while leaving the final choice and booking to the guest.
 
-### 4. Legal Team
-Reviews claims that require legal action or escalation after the airline response period or failed resolution.
+## Primary user
 
-## Product Scope
-The first version of the platform focuses on the end-to-end operational workflow for claim intake and case management, including:
+The researching traveler wants a stay that fits their trip, budget, and priorities. They need concise review themes, balanced trade-offs, trustworthy evidence, and an easy way to refine a shortlist without starting over.
 
-- round-robin assignment,
-- probable duplicate detection,
+## Prioritized capabilities
+
+1. **P0: AI Review Summary** — summarize relevant review themes and caveats with available evidence.
+2. **P1: Personalized Stay Comparison** — compare selected stays using the guest's stated preferences.
+3. **P2: Agentic Research** — gather available information into a cited shortlist with transparent reasoning.
+
+## Product boundaries
+
+- StayMate supports Airbnb discovery and does not replace search, listing pages, or booking.
+- The guest remains in control; StayMate does not book or take consequential actions.
+- The portfolio prototype uses exported design screens and synthetic/demo content. It is not a live Airbnb or AI integration.
+- Recommendations should separate listing facts, review evidence, AI synthesis, and unknown information.
+
+## Success measures
+
+- North star: share of guests who book after using AI-assisted research or comparison.
+- Leading indicators: adoption, comparisons per user, and median decision time.
+- Counter-metrics: abandonment, recommendation rejection, and day-30 repeat use.
+
+See [PRD.md](PRD.md) for functional requirements, acceptance criteria, non-functional requirements, and assumptions.
 - dynamic questionnaire flows,
-- document collection and validation,
-- eligibility reassessment,
-- airline submission tracking,
-- response follow-up and outcome logging,
-- milestone-based passenger communication, and
-- legal escalation management.
-
-## Primary Use Cases
-- Passenger submits a claim after a delay, cancellation, baggage issue, or related disruption.
-- The system automatically assigns the case to the next available executive.
-- The executive reviews the claim and checks for likely duplicates.
-- The questionnaire adapts to the scenario selected by the passenger.
-- Missing or invalid documents are requested and tracked.
-- The claim is accepted or rejected after a structured review.
-- Completed claims are submitted to the airline within 48 hours.
-- Outcome updates and follow-up actions are recorded across the case timeline.
-
-## Key Product Requirements
-- Claims must be assigned using a round-robin strategy.
-- Duplicate claims must be flagged but not auto-closed.
-- Eligibility must be revisited throughout the case lifecycle.
-- Questionnaire sections must change based on claim type.
-- Passenger communications must be triggered at meaningful milestones.
-- Airlines must receive claims within defined SLA windows.
-- Documentation and actions must be recorded in a central case record.
-- Legal review must be available for unresolved or escalated claims.
-
-## Non-Functional Requirements
-- Secure handling of personal and sensitive passenger data.
-- Clear audit trail for actions, documents, and communications.
-- Role-based access for customer service, operations, and legal teams.
-- Responsive user experience for operations teams.
-- Scalable workflow engine for future expansion into more claim types or regions.
-
-## Success Metrics
-- Average time to first review
-- Cases submitted to airline within 48 hours
-- Duplicate detection rate and review accuracy
-- Document completion rate
-- Passenger communication effectiveness
-- Reduction in manual processing errors
-- Improved legal escalation visibility and response time
-
-## Risks and Constraints
-- Incomplete or contradictory passenger evidence
-- Airline response delays or inconsistent communication
-- Data quality issues from varied claim scenarios
-- Need for clear SLA tracking and operational accountability
-- Sensitive customer information requiring strong compliance controls
-
-## Portfolio Positioning
-This project is highly suitable as a portfolio asset because it demonstrates:
-
-- product thinking,
-- workflow design,
-- UX and case management orchestration,
-- backend logic and data modeling,
-- business process automation,
-- communication and escalation design,
-- and real-world operational problem solving.
-
-This project can be built as a modern full-stack application and presented as a professional, business-driven software product rather than a generic demo.

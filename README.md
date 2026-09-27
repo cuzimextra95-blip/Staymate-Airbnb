@@ -25,153 +25,126 @@ This project brings together:
 into a cohesive GitHub-ready project that demonstrates product thinking, UX exploration, and real-world workflow design.
 
 The goal is to present a compelling product story for recruiters, hiring managers, and design/product stakeholders who want to see how ideas become tangible experiences.
-
-## Live demo
-This repo is ready for deployment to a static hosting platform such as Vercel or Netlify.
-
-```bash
-npm install
-npm run build
-```
-
-To deploy on Vercel:
-
-1. Import the repository into Vercel.
-2. Use the default build command: `npm run build`
-3. Set the output directory to: `dist`
-4. Publish the site and share the live URL in your portfolio.
-
-If you want a public demo link later, this project is set up to be deployed quickly with minimal additional configuration.
-
-## Why this project stands out
-This repo is not just a static mockup. It is structured to showcase:
-
-- business problem framing,
-- workflow clarity,
-- product decision-making,
-- UX/UI craftsmanship,
-- and realistic operational scenarios for a travel and hospitality product.
-
-It is a strong portfolio piece because it communicates product depth rather than just visual polish.
-
-## Screenshots from the prototype
-
-### Desktop workflow previews
+# StayMate
 
 <p align="center">
-  <img src="Prototype Screens/Desktop/airbnb_stay_discovery_with_staymate_desktop/screen.png" alt="Airbnb stay discovery with StayMate" width="900" />
+  <strong>An AI companion for choosing a stay with confidence.</strong><br />
+  Product strategy · UX exploration · Responsive React showcase
 </p>
 
 <p align="center">
-  <img src="Prototype Screens/Desktop/staymate_decision_booking_flow_desktop/screen.png" alt="StayMate decision booking flow" width="900" />
+  <a href="https://stitch.withgoogle.com/projects/12556739218636411021">Stitch concept board</a> ·
+  <a href="PRD.md">Product requirements</a> ·
+  <a href="https://github.com/cuzimextra95-blip/Staymate-Airbnb">GitHub repository</a>
 </p>
 
 <p align="center">
-  <img src="Prototype Screens/Desktop/staymate_review_intelligence_desktop/screen.png" alt="StayMate review intelligence" width="900" />
+  <img src="assets/screenshots/staymate-project-01.png" alt="StayMate project screenshot 1" width="100%" />
 </p>
+
+## Overview
+
+StayMate is a portfolio concept for an AI decision companion inside the Airbnb stay-discovery journey. It helps guests understand reviews, compare a shortlist against their own priorities, and explore relevant information without handing over the final choice.
+
+This repository combines a responsive React case-study experience with the supplied desktop and mobile prototype exports, product brief, and design-system references.
+
+## The problem
+
+Choosing a stay can mean cross-checking reviews, amenities, prices, location, and photos across search engines, travel sites, social media, and competing platforms. Conflicting information adds effort and doubt at the moment a guest needs to make a decision.
+
+## The solution
+
+StayMate brings decision support closer to the listing. Guests can ask a question or name their priorities, review evidence-backed summaries, compare trade-offs, and return to the existing listing and booking flow when they are ready.
+
+## Key features
+
+- **AI Review Summary (P0):** Summarize review themes that matter to a guest, including relevant positives, concerns, and source evidence.
+- **Personalized Stay Comparison (P1):** Compare selected stays against guest priorities and explain why options differ.
+- **Agentic Research (P2):** Explore a source-aware shortlist with visible reasoning, progress, and uncertainty.
+- **Guest stays in control:** StayMate never books, messages a host, or commits the guest to a choice.
+- **Responsive explorations:** Browse five desktop and ten mobile concepts in the interactive screen gallery.
+
+The portfolio app uses exported concept screens and does not claim to connect to Airbnb or live AI/research services.
+
+## UX flow
+
+1. **Set priorities:** Ask a natural-language question or choose what matters for the trip.
+2. **Understand stays:** Review summary evidence, compare the shortlist, and see trade-offs.
+3. **Refine the decision:** Adjust priorities or ask a follow-up without losing the current context.
+4. **Continue on Airbnb:** Open the selected listing and make the booking decision there.
+
+## Screenshots
+
+The following four supplied project screenshots are stored locally and embedded with relative paths:
 
 <p align="center">
-  <img src="Prototype Screens/Desktop/staymate_side_by_side_stay_comparison_desktop/screen.png" alt="StayMate comparison experience" width="900" />
+  <img src="assets/screenshots/staymate-project-01.png" alt="StayMate project screenshot 1" width="49%" />
+  <img src="assets/screenshots/staymate-project-02.png" alt="StayMate project screenshot 2" width="49%" />
 </p>
-
-### Mobile experience previews
-
 <p align="center">
-  <img src="Prototype Screens/Mobile/airbnb_stay_discovery/screen.png" alt="Mobile Airbnb stay discovery" width="350" />
-  <img src="Prototype Screens/Mobile/decision_booking/screen.png" alt="Mobile decision booking" width="350" />
-  <img src="Prototype Screens/Mobile/personalized_shortlist/screen.png" alt="Mobile personalized shortlist" width="350" />
+  <img src="assets/screenshots/staymate-project-03.png" alt="StayMate project screenshot 3" width="49%" />
+  <img src="assets/screenshots/staymate-project-04.png" alt="StayMate project screenshot 4" width="49%" />
 </p>
 
-<p align="center">
-  <img src="Prototype Screens/Mobile/personalized_stay_comparison/screen.png" alt="Mobile stay comparison" width="350" />
-  <img src="Prototype Screens/Mobile/agentic_research_results/screen.png" alt="Mobile agentic research results" width="350" />
-  <img src="Prototype Screens/Mobile/ai_review_summary/screen.png" alt="Mobile AI review summary" width="350" />
-</p>
+### Prototype library
 
-## GitHub project description
-This project demonstrates a product-minded approach to travel UX by turning a discovery and decision-support concept into a clean, polished prototype. It highlights how AI-assisted research, comparison tools, and recommendation flows can be translated into a clear and attractive user experience for modern hospitality products.
+- [Desktop screens](Prototype%20Screens/Desktop/): stay discovery, review intelligence, side-by-side comparison, research dossier, and booking flow.
+- [Mobile screens](Prototype%20Screens/Mobile/): entry, discovery, review summary, comparison, shortlist, research, booking, and brand explorations.
+- Each exported prototype includes its available `screen.png` and `code.html`; the companion design-system references are in the desktop and mobile folders.
 
-## Included assets
-- PRD and product context: [context.md](context.md)
-- implementation planning: [plan.md](plan.md)
-- project overview and usage docs: [README.md](README.md)
-- prototype screens: [Prototype Screens](Prototype%20Screens)
-- interactive UI preview: built in React + Vite
+## Tech and tools
 
-## Product storytelling
-The experience is framed around a travel support and decision-making concept where users can:
+- React 18 and Vite 5 for the portfolio experience
+- JavaScript and CSS, with Plus Jakarta Sans typography
+- Google Stitch for the concept board
+- Exported HTML, PNG, and design-system notes for desktop and mobile explorations
 
-- discover stays and options,
-- compare alternatives,
-- review recommendations,
-- evaluate decision support content,
-- manage trust and confidence in product guidance,
-- and understand how an AI-assisted travel workflow can feel useful and polished.
+## Run locally
 
-## Featured workflow themes
-- discovery and comparison
-- decision support and recommendation confidence
-- AI-assisted research summaries
-- review intelligence and idea validation
-- traveler-focused UX with clear decision paths
-
-## Tech stack
-- React
-- Vite
-- JavaScript
-- CSS
-- Product mockup architecture with reusable component concepts
-
-## Local development
+Requirements: Node.js 18 or later and npm.
 
 ```bash
 npm install
 npm run dev
 ```
 
-Then visit:
+Vite prints the local URL in the terminal, usually `http://localhost:5173/`.
 
-```bash
-http://localhost:3000/
-```
-
-## Production build
+Create a production build with:
 
 ```bash
 npm run build
 ```
 
-## Project structure
+## Project links
+
+- [Stitch project](https://stitch.withgoogle.com/projects/12556739218636411021)
+- [Product requirements document](PRD.md)
+- [Project context](context.md)
+- [Implementation plan](plan.md)
+- [Workshop source PDF](Kritika%20-%20PM%20Workshop%20-%20PRD.pdf)
+- [Desktop prototype library](Prototype%20Screens/Desktop/)
+- [Mobile prototype library](Prototype%20Screens/Mobile/)
+- [Repository on GitHub](https://github.com/cuzimextra95-blip/Staymate-Airbnb)
+
+## Repository map
 
 ```text
 .
-├── README.md
-├── context.md
-├── plan.md
-├── LICENSE
-├── package.json
-├── vite.config.js
-├── index.html
-├── .gitignore
-├── src/
-│   ├── App.jsx
-│   ├── main.jsx
-│   └── styles.css
-├── Prototype Screens/
-├── docs/
-└── dist/
+├── assets/screenshots/       # Supplied project screenshots used above
+├── Prototype Screens/        # Desktop and mobile HTML/PNG explorations
+├── src/                      # Responsive React portfolio experience
+├── PRD.md                    # Implementation-ready product requirements
+├── context.md                # Product context
+├── plan.md                   # Portfolio implementation plan
+└── Kritika - PM Workshop - PRD.pdf
 ```
 
-## Portfolio positioning
-This repo can be presented as:
+## Project status
 
-> A product design and frontend prototype that translates a workshop PRD and sample mockups into a polished, portfolio-ready experience for a travel and hospitality product.
-
-## Next steps
-- connect this repo to GitHub,
-- add live deployment,
-- improve the flow with more pages and interactions,
-- and continue expanding the portfolio story behind the product.
+StayMate is an independent product concept for portfolio exploration and is not affiliated with Airbnb, Inc. The interface presents product thinking and exported design explorations; no production data, live AI, or booking integration is included.
 
 ## License
-This project is available under the MIT License for portfolio and personal project use.
+
+Released under the [MIT License](LICENSE).
+├── plan.md

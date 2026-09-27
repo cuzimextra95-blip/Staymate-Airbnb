@@ -35,164 +35,40 @@ The project should be implemented as a realistic SaaS-style workflow application
    - rejected claims
    - duplicates
    - legal review
+# Implementation Plan
 
-5. Document management
-   - upload and attach evidence
-   - status tracking for missing or invalid documents
+## Product direction
 
-6. Airline submission workflow
-   - eligibility confirmation
-   - SLA marker for 48-hour submission
-   - submission tracking and case references
+Deliver a portfolio-ready StayMate case study and responsive React experience, supported by the supplied desktop/mobile screen exports and the product requirements in [PRD.md](PRD.md). The first release is a concept showcase, not a production Airbnb integration.
 
-7. Communication timeline
-   - passenger email and status updates
-   - milestone tracking
+## Current deliverables
 
-8. Legal escalation and closure states
-   - legal review,
-   - resolved,
-   - closed,
-   - deleted or duplicate records
+- Responsive product story page with problem, solution, priorities, and guest journey.
+- Desktop/mobile screen gallery linking to the exported prototype sources.
+- Organized supplied screenshots under `assets/screenshots/`.
+- Self-contained project documentation and local setup instructions.
 
-## 4. Recommended Tech Stack
-### Frontend
-- Next.js or React
-- TypeScript
-- Tailwind CSS
-- shadcn/ui for dashboard components
+## Delivery sequence
 
-### Backend
-- Node.js / Next.js API routes or a separate Express/Nest service
-- PostgreSQL
+### 1. Foundation
+- Align package metadata, page metadata, documentation, and design tokens with StayMate.
+- Preserve the full supplied prototype library and source PDF.
+- Add clear dependency, environment, and generated-file exclusions.
 
-### Data and Auth
-- Supabase or Postgres + Prisma
-- Auth with email/password or OAuth
+### 2. Portfolio experience
+- Explain the user problem and guest-led product approach.
+- Present P0 review summaries, P1 stay comparison, and P2 agentic research in priority order.
+- Make the desktop/mobile gallery responsive and navigable.
 
-### Storage
-- Cloud storage for documents and attachments
+### 3. Repository polish
+- Document setup, build, links, prototype inventory, and project limitations.
+- Verify screenshots and internal links resolve from the repository root.
+- Run the production build and inspect the final Git status before pushing.
 
-### Optional enhancements
-- email service integration
-- AI-assisted claim triage or summarization
-- analytics dashboard
+## Acceptance checklist
 
-## 5. Suggested Architecture
-### App layers
-- Client UI for passenger and internal workflows
-- API layer for case management logic
-- Database layer for structured records and statuses
-- File storage for documents and evidence
-- Notification layer for updates and reminders
-
-### Key entities
-- Passenger
-- Claim
-- ClaimType
-- FlightDetails
-- DisruptionDetails
-- CaseAssignment
-- DocumentRecord
-- CommunicationLog
-- AirlineSubmission
-- OutcomeStatus
-
-## 6. Detailed Delivery Plan
-
-### Phase 1 — Foundation and product setup
-- define repository structure
-- set up app shell and design system
-- create database schema
-- implement auth and role-based access
-- build generic dashboard layout
-
-### Phase 2 — Claim intake and dynamic workflows
-- create claim creation flow
-- add claim type selection
-- implement conditional questionnaire logic
-- add validation and submission states
-
-### Phase 3 — Operational workflow and review
-- implement assignment logic
-- support duplicate detection UI
-- create claim detail page with timeline
-- add eligibility and document review states
-
-### Phase 4 — Airline submission and follow-up
-- add submission checklist
-- track airline case numbers and timestamps
-- implement follow-up workflow and response logging
-- create SLA tracking for 48-hour and 7-day milestones
-
-### Phase 5 — Communication and legal escalation
-- add passenger communication templates
-- add milestone notifications
-- implement legal review and closure actions
-- support historical case audit trail
-
-### Phase 6 — Polish and portfolio presentation
-- write production-ready README
-- polish UX and interactions
-- add analytics and metrics dashboards
-- prepare demo data and mock case scenarios
-
-## 7. Database Model Outline
-- Users
-- Roles
-- Passengers
-- Claims
-- ClaimEvents
-- Documents
-- AirlineSubmitters
-- CommunicationEntries
-- LegalEscalations
-
-## 8. Suggested Business Logic Workflows
-### Round-robin assignment
-- maintain a queue or cycle of active executives
-- assign each new claim to the next available team member
-
-### Duplicate detection
-- compare passenger, booking, flight, airline, and disruption fields
-- flag as probable duplicate
-- require human confirmation before final duplicate status
-
-### Eligibility reassessment
-- permit changes in status as new documents or airline responses arrive
-- track reasons for ineligible outcomes
-
-### SLA enforcement
-- enforce claim submission within 48 hours
-- trigger follow-up after airline response windows
-
-## 9. Risks and Mitigations
-### Risk: overly broad scope
-Mitigation: build MVP around the most important operational claims workflow first.
-
-### Risk: unrealistic complexity in duplicate logic
-Mitigation: start with rule-based matching and allow future AI-assisted enhancement.
-
-### Risk: weak UX for operations teams
-Mitigation: prioritize clarity, status visibility, and simple workflows over flashy UI.
-
-## 10. Exit Criteria for MVP
-The MVP is complete when a user can:
-- create a claim,
-- review and assign it,
-- confirm or reject duplicate classification,
-- validate eligibility,
-- request missing documents,
-- submit to airline,
-- track follow-up and outcome,
-- close the claim with auditable records.
-
-## 11. Recommended Portfolio Positioning
-This project should be framed as:
-
-- a workflow-first SaaS product,
-- a real-world operations platform,
-- a case management system for claims and customer support,
-- and a strong demonstration of product thinking plus full-stack engineering capability.
-
-This framing makes the project compelling to recruiters, hiring managers, and product-focused engineering teams.
+- `npm install`, `npm run dev`, and `npm run build` are documented and work.
+- All current desktop and mobile design exports remain in the repository.
+- README images use local relative paths and all referenced files exist.
+- No secrets or generated dependencies/build output are tracked.
+- Product language does not imply live AI, Airbnb, or booking integrations.
