@@ -54,6 +54,40 @@ This repo is not just a static mockup. It is structured to showcase:
 
 It is a strong portfolio piece because it communicates product depth rather than just visual polish.
 
+## Screenshots from the prototype
+
+### Desktop workflow previews
+
+<p align="center">
+  <img src="Prototype Screens/Desktop/airbnb_stay_discovery_with_staymate_desktop/screen.png" alt="Airbnb stay discovery with StayMate" width="900" />
+</p>
+
+<p align="center">
+  <img src="Prototype Screens/Desktop/staymate_decision_booking_flow_desktop/screen.png" alt="StayMate decision booking flow" width="900" />
+</p>
+
+<p align="center">
+  <img src="Prototype Screens/Desktop/staymate_review_intelligence_desktop/screen.png" alt="StayMate review intelligence" width="900" />
+</p>
+
+<p align="center">
+  <img src="Prototype Screens/Desktop/staymate_side_by_side_stay_comparison_desktop/screen.png" alt="StayMate comparison experience" width="900" />
+</p>
+
+### Mobile experience previews
+
+<p align="center">
+  <img src="Prototype Screens/Mobile/airbnb_stay_discovery/screen.png" alt="Mobile Airbnb stay discovery" width="350" />
+  <img src="Prototype Screens/Mobile/decision_booking/screen.png" alt="Mobile decision booking" width="350" />
+  <img src="Prototype Screens/Mobile/personalized_shortlist/screen.png" alt="Mobile personalized shortlist" width="350" />
+</p>
+
+<p align="center">
+  <img src="Prototype Screens/Mobile/personalized_stay_comparison/screen.png" alt="Mobile stay comparison" width="350" />
+  <img src="Prototype Screens/Mobile/agentic_research_results/screen.png" alt="Mobile agentic research results" width="350" />
+  <img src="Prototype Screens/Mobile/ai_review_summary/screen.png" alt="Mobile AI review summary" width="350" />
+</p>
+
 ## GitHub project description
 This project demonstrates a product-minded approach to travel UX by turning a discovery and decision-support concept into a clean, polished prototype. It highlights how AI-assisted research, comparison tools, and recommendation flows can be translated into a clear and attractive user experience for modern hospitality products.
 
