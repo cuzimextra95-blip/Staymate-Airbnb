@@ -1,60 +1,78 @@
-# AiroRight Claim Management Portfolio Project
+# StayMate x Airbnb — Portfolio Product Showcase
 
-A polished frontend prototype and product case study for an airline passenger claim management platform. This repo combines the PRD requirements with a UI concept that showcases the core workflow: claim intake, duplicate review, eligibility checks, airline submission, and escalation management.
+A polished product mockup and workflow prototype built from the workshop PRD and sample design screens. This repository is designed to feel like a portfolio-ready product case study for a product manager or frontend engineer working on travel, decision support, and customer experience experiences.
 
-## Project overview
-This project is designed to be a strong GitHub portfolio asset for a product-minded frontend/full-stack developer. It emphasizes:
+<p align="center">
+  <img src="https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=white" alt="React" />
+  <img src="https://img.shields.io/badge/Vite-5-646CFF?logo=vite&logoColor=white" alt="Vite" />
+  <img src="https://img.shields.io/badge/Status-Portfolio%20Ready-34D399" alt="Status" />
+  <img src="https://img.shields.io/badge/Design-System-UI%20Prototype-7C9CFF" alt="Design system" />
+</p>
 
-- workflow design and business logic,
-- operational dashboard UX,
-- product storytelling,
-- and realistic case-management patterns used in customer support systems.
+## Overview
+This project brings together:
 
-## Included in this repo
-- PRD-based product context in [context.md](context.md)
-- implementation roadmap in [plan.md](plan.md)
-- sample product screens and workflow previews in the app UI
-- a working frontend prototype ready to run locally
+- the workshop PRD,
+- the sample screen assets,
+- and a modern portfolio presentation,
 
-## Product concept
-AiroRight helps airline support teams manage claims for:
+into a cohesive GitHub-ready project that demonstrates product thinking, UX exploration, and real-world workflow design.
 
-- flight delays,
-- cancellation claims,
-- baggage delays,
-- baggage loss,
-- and related passenger support workflows.
+The goal is to present a compelling product story for recruiters, hiring managers, and design/product stakeholders who want to see how ideas become tangible experiences.
 
-The experience includes the main operational stages of the lifecycle:
+## Why this project stands out
+This repo is not just a static mockup. It is structured to showcase:
 
-1. claim intake,
-2. round-robin case assignment,
-3. duplicate detection,
-4. eligibility review,
-5. document verification,
-6. airline submission,
-7. follow-up tracking,
-8. legal escalation and closure.
+- business problem framing,
+- workflow clarity,
+- product decision-making,
+- UX/UI craftsmanship,
+- and realistic operational scenarios for a travel and hospitality product.
+
+It is a strong portfolio piece because it communicates product depth rather than just visual polish.
+
+## Included assets
+- PRD and product context: [context.md](context.md)
+- implementation planning: [plan.md](plan.md)
+- project overview and usage docs: [README.md](README.md)
+- prototype screens: [Prototype Screens](Prototype%20Screens)
+- interactive UI preview: built in React + Vite
+
+## Product storytelling
+The experience is framed around a travel support and decision-making concept where users can:
+
+- discover stays and options,
+- compare alternatives,
+- review recommendations,
+- evaluate decision support content,
+- manage trust and confidence in product guidance,
+- and understand how an AI-assisted travel workflow can feel useful and polished.
+
+## Featured workflow themes
+- discovery and comparison
+- decision support and recommendation confidence
+- AI-assisted research summaries
+- review intelligence and idea validation
+- traveler-focused UX with clear decision paths
 
 ## Tech stack
 - React
 - Vite
 - JavaScript
 - CSS
+- Product mockup architecture with reusable component concepts
 
-This was intentionally kept lightweight so the repo is easy to run, modify, and push to GitHub without complex setup overhead.
-
-## Local setup
+## Local development
 
 ```bash
 npm install
 npm run dev
 ```
 
-Then open the local URL shown in the terminal, typically:
+Then visit:
 
 ```bash
-http://localhost:3000
+http://localhost:3000/
 ```
 
 ## Production build
@@ -63,24 +81,14 @@ http://localhost:3000
 npm run build
 ```
 
-## GitHub push workflow
-
-```bash
-git init
-git add .
-git commit -m "Initial portfolio project setup"
-git branch -M main
-git remote add origin <your-repository-url>
-git push -u origin main
-```
-
-## Repository structure
+## Project structure
 
 ```text
 .
 ├── README.md
 ├── context.md
 ├── plan.md
+├── LICENSE
 ├── package.json
 ├── vite.config.js
 ├── index.html
@@ -90,19 +98,20 @@ git push -u origin main
 │   ├── main.jsx
 │   └── styles.css
 ├── Prototype Screens/
-└── docs/
+├── docs/
+└── dist/
 ```
 
-## Why this works well for a portfolio
-This project is compelling because it demonstrates:
+## Portfolio positioning
+This repo can be presented as:
 
-- product thinking beyond a simple landing page,
-- real business workflow modeling,
-- strong operational UX design,
-- and the ability to convert a PRD into a working prototype.
+> A product design and frontend prototype that translates a workshop PRD and sample mockups into a polished, portfolio-ready experience for a travel and hospitality product.
 
-## Notes
-The app intentionally focuses on a realistic, polished product mockup instead of a generic demo. This makes it easier to present as a product design + frontend engineering portfolio project.
+## Next steps
+- connect this repo to GitHub,
+- add live deployment,
+- improve the flow with more pages and interactions,
+- and continue expanding the portfolio story behind the product.
 
 ## License
-No license has been added yet. If you plan to publish this repository publicly, consider adding an appropriate open-source license.
+This project is available under the MIT License for portfolio and personal project use.
