@@ -9,6 +9,12 @@ A polished product mockup and workflow prototype built from the workshop PRD and
   <img src="https://img.shields.io/badge/Design-System-UI%20Prototype-7C9CFF" alt="Design system" />
 </p>
 
+## Portfolio summary
+A product-driven travel experience concept focused on discovery, recommendation confidence, and decision support. This project translates a workshop PRD and design screen references into a polished front-end prototype that feels like a real SaaS product experience rather than a generic demo.
+
+### Short portfolio blurb
+> Built a portfolio-ready travel product concept that combines AI-assisted discovery, decision support, and comparison workflows into a polished, recruiter-friendly frontend prototype.
+
 ## Overview
 This project brings together:
 
@@ -20,6 +26,23 @@ into a cohesive GitHub-ready project that demonstrates product thinking, UX expl
 
 The goal is to present a compelling product story for recruiters, hiring managers, and design/product stakeholders who want to see how ideas become tangible experiences.
 
+## Live demo
+This repo is ready for deployment to a static hosting platform such as Vercel or Netlify.
+
+```bash
+npm install
+npm run build
+```
+
+To deploy on Vercel:
+
+1. Import the repository into Vercel.
+2. Use the default build command: `npm run build`
+3. Set the output directory to: `dist`
+4. Publish the site and share the live URL in your portfolio.
+
+If you want a public demo link later, this project is set up to be deployed quickly with minimal additional configuration.
+
 ## Why this project stands out
 This repo is not just a static mockup. It is structured to showcase:
 
@@ -30,6 +53,9 @@ This repo is not just a static mockup. It is structured to showcase:
 - and realistic operational scenarios for a travel and hospitality product.
 
 It is a strong portfolio piece because it communicates product depth rather than just visual polish.
+
+## GitHub project description
+This project demonstrates a product-minded approach to travel UX by turning a discovery and decision-support concept into a clean, polished prototype. It highlights how AI-assisted research, comparison tools, and recommendation flows can be translated into a clear and attractive user experience for modern hospitality products.
 
 ## Included assets
 - PRD and product context: [context.md](context.md)
