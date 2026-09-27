@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f6f2">
+  <meta name="description" content="A responsive StayMate concept prototype for researching and comparing stays.">
+  <title>StayMate | Find stays that fit your trip</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="StayMate home">
+      <img src="logo.png" alt="StayMate">
+      <span class="brand-divider" aria-hidden="true"></span>
+      <span class="brand-caption">A clearer way to choose a stay</span>
+    </a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <button class="nav-button is-active" type="button" data-view="discover" aria-selected="true">
+        <span class="material-symbols-outlined" aria-hidden="true">travel_explore</span>Discover
+      </button>
+      <button class="nav-button" type="button" data-view="compare" aria-selected="false">
+        <span class="material-symbols-outlined" aria-hidden="true">compare_arrows</span>Compare <span class="nav-count" id="compare-count">0</span>
+      </button>
+      <button class="nav-button" type="button" data-view="reviews" aria-selected="false">
+        <span class="material-symbols-outlined" aria-hidden="true">rate_review</span>Review insights
+      </button>
+      <button class="nav-button" type="button" data-view="saved" aria-selected="false">
+        <span class="material-symbols-outlined" aria-hidden="true">bookmark</span>Saved <span class="nav-count" id="saved-count">0</span>
+      </button>
+    </nav>
+    <div class="prototype-label"><span class="status-dot"></span>Concept prototype</div>
+  </header>
+
+  <main id="main-content">
+    <section class="welcome-section" id="top" aria-labelledby="welcome-title">
+      <div class="welcome-copy">
+        <p class="eyebrow"><span class="eyebrow-mark" aria-hidden="true"></span>STAY RESEARCH, BUILT AROUND YOU</p>
+        <h1 id="welcome-title">Find the stay that fits <span>your trip.</span></h1>
+        <p class="welcome-description">Tell StayMate what matters. Get a clearer view of reviews, trade-offs, and the stays worth a closer look.</p>
+        <div class="trust-line">
+          <span class="material-symbols-outlined" aria-hidden="true">visibility</span>
+          <span>See what shaped a match. You make the call.</span>
+        </div>
+      </div>
+
+      <form class="brief-form" id="search-form">
+        <div class="form-heading">
+          <div>
+            <p class="form-kicker">YOUR TRIP BRIEF</p>
+            <h2>What matters most?</h2>
+          </div>
+          <span class="ai-mark material-symbols-outlined" aria-hidden="true">auto_awesome</span>
+        </div>
+        <label class="field-label" for="trip-brief">Describe your stay in your own words</label>
+        <textarea id="trip-brief" name="brief" rows="3">Find me a family-friendly stay in North Goa with great location and cleanliness under ₹15,000 a night.</textarea>
+        <div class="form-fields">
+          <label class="input-field destination-field">
+            <span>Where</span>
+            <input id="destination" name="destination" type="text" value="North Goa" autocomplete="off">
+          </label>
+          <label class="input-field">
+            <span>When</span>
+            <input id="dates" name="dates" type="text" value="12–15 Jan" autocomplete="off">
+          </label>
+          <label class="input-field">
+            <span>Guests</span>
+            <select id="guests" name="guests">
+              <option value="1">1 guest</option>
+              <option value="2">2 guests</option>
+              <option value="3" selected>3 guests</option>
+              <option value="4">4 guests</option>
+              <option value="5">5 guests</option>
+              <option value="6">6 guests</option>
+            </select>
+          </label>
+          <label class="input-field budget-field">
+            <span>Nightly budget</span>
+            <span class="currency-input"><span aria-hidden="true">₹</span><input id="budget" name="budget" type="number" min="1000" step="500" value="15000" inputmode="numeric"></span>
+          </label>
+        </div>
+        <fieldset class="preference-fieldset">
+          <legend>Priorities <span>Choose what to focus on</span></legend>
+          <div class="preference-chips" id="preference-chips">
+            <button class="preference-chip is-selected" type="button" aria-pressed="true" data-preference="Family-friendly">Family-friendly</button>
+            <button class="preference-chip is-selected" type="button" aria-pressed="true" data-preference="Great location">Great location</button>
+            <button class="preference-chip is-selected" type="button" aria-pressed="true" data-preference="Cleanliness">Cleanliness</button>
+            <button class="preference-chip" type="button" aria-pressed="false" data-preference="Quiet nights">Quiet nights</button>
+          </div>
+        </fieldset>
+        <button class="primary-button search-button" type="submit">
+          <span class="material-symbols-outlined" aria-hidden="true">search</span>Find stays
+          <span class="button-arrow" aria-hidden="true">→</span>
+        </button>
+        <p class="sample-note"><span class="material-symbols-outlined" aria-hidden="true">info</span>Example stays and review data only. No live inventory or AI service is connected.</p>
+      </form>
+    </section>
+
+    <section class="results-section" aria-labelledby="results-title" id="results-section">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker" id="results-context">YOUR EXAMPLE SEARCH</p>
+          <h2 id="results-title">Stays worth a closer look</h2>
+          <p class="section-subtitle" id="results-description">A short list, weighed against the things you care about.</p>
+        </div>
+        <label class="sort-control" for="sort-order"><span>Sort by</span>
+          <select id="sort-order">
+            <option value="match">Best fit</option>
+            <option value="price-low">Price: low to high</option>
+            <option value="rating">Guest rating</option>
+          </select>
+        </label>
+      </div>
+      <div class="applied-brief" id="applied-brief" aria-live="polite"></div>
+
+      <section class="view-panel" data-panel="discover" aria-label="Stay recommendations">
+        <div class="stay-grid" id="stay-grid"></div>
+      </section>
+
+      <section class="view-panel" data-panel="compare" aria-labelledby="compare-heading" hidden>
+        <div class="panel-heading">
+          <div><p class="section-kicker">SIDE BY SIDE</p><h2 id="compare-heading">See the trade-offs clearly</h2></div>
+          <p class="section-subtitle">Select up to three stays from Discover to compare them.</p>
+        </div>
+        <div id="comparison-content"></div>
+      </section>
+
+      <section class="view-panel" data-panel="reviews" aria-labelledby="reviews-heading" hidden>
+        <div class="panel-heading review-panel-heading">
+          <div><p class="section-kicker">REVIEW INTELLIGENCE</p><h2 id="reviews-heading">What guests mention</h2></div>
+          <label class="sort-control review-select" for="review-stay"><span>Stay</span><select id="review-stay"></select></label>
+        </div>
+        <div id="review-content"></div>
+      </section>
+
+      <section class="view-panel" data-panel="saved" aria-labelledby="saved-heading" hidden>
+        <div class="panel-heading"><div><p class="section-kicker">YOUR SHORTLIST</p><h2 id="saved-heading">Saved stays</h2></div></div>
+        <div class="stay-grid" id="saved-grid"></div>
+      </section>
+    </section>
+
+    <section class="source-note" aria-label="Prototype data note">
+      <span class="material-symbols-outlined" aria-hidden="true">science</span>
+      <p><strong>Portfolio prototype.</strong> Stay names, prices, ratings, review themes, and fit labels are sample content for demonstrating the flow. They are not current Airbnb listings or verified research.</p>
+    </section>
+  </main>
+
+  <aside class="compare-tray" id="compare-tray" aria-live="polite" hidden>
+    <div><strong id="compare-tray-count">0 stays selected</strong><span>Compare the options you saved for this trip.</span></div>
+    <button class="primary-button" type="button" data-view="compare">Compare stays <span aria-hidden="true">→</span></button>
+  </aside>
+
+  <nav class="mobile-nav" aria-label="Main navigation">
+    <button class="mobile-nav-button is-active" type="button" data-view="discover" aria-selected="true"><span class="material-symbols-outlined" aria-hidden="true">travel_explore</span><span>Explore</span></button>
+    <button class="mobile-nav-button" type="button" data-view="compare" aria-selected="false"><span class="material-symbols-outlined" aria-hidden="true">compare_arrows</span><span>Compare</span><span class="mobile-nav-count" id="mobile-compare-count">0</span></button>
+    <button class="mobile-nav-button" type="button" data-view="reviews" aria-selected="false"><span class="material-symbols-outlined" aria-hidden="true">rate_review</span><span>Reviews</span></button>
+    <button class="mobile-nav-button" type="button" data-view="saved" aria-selected="false"><span class="material-symbols-outlined" aria-hidden="true">bookmark</span><span>Saved</span><span class="mobile-nav-count" id="mobile-saved-count">0</span></button>
+  </nav>
+
+  <dialog class="handoff-dialog" id="handoff-dialog" aria-labelledby="handoff-title">
+    <form method="dialog" class="dialog-close-form"><button class="icon-button close-dialog" aria-label="Close dialog"><span class="material-symbols-outlined" aria-hidden="true">close</span></button></form>
+    <span class="dialog-mark material-symbols-outlined" aria-hidden="true">open_in_new</span>
+    <p class="section-kicker">YOUR DECISION, YOURS</p>
+    <h2 id="handoff-title">Ready to review this stay?</h2>
+    <p id="handoff-description">This concept would hand off to the stay listing. No booking is made from this prototype.</p>
+    <div class="dialog-actions"><button class="secondary-button" type="button" data-close-dialog>Keep exploring</button><button class="primary-button" type="button" data-close-dialog>Got it</button></div>
+  </dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

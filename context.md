@@ -92,7 +92,7 @@ The PRD does not define baselines, target thresholds, event definitions, or an e
 
 ## Source materials
 
-- [Product requirements document](Kritika%20-%20PM%20Workshop%20-%20PRD.pdf)
+- [Product requirements document](archive/Kritika%20-%20PM%20Workshop%20-%20PRD.pdf)
 - [Prototype screens](Prototype%20Screens/)
 - [Project screenshots](Project%20Screenshots/)
 - [Logo asset](logo.png)
